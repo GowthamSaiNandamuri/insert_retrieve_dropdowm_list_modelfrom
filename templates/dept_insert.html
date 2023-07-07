@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{width: fit-content;
+        background-color: blueviolet;
+        border-radius: 0lvi ;}
+        h1{color:beige;
+        background-color:burlywood;}
+        
+    </style>
+</head>
+<body>
+    <center><h1>WELCOME TO DEPT TABLE</h1></center>
+    <center>
+        <fieldset>
+            <form action="" method="POST">
+                {% csrf_token %}
+                <label for="dept">DEPTNO</label>
+                <input type="number" name="d" id="dept">
+                <br><br>
+                <label for="de">DNAME</label>
+                <input type="text" name="e" id="de">
+                <br><br>
+                <label for="pt">LOC</label>
+                <input type="text" name="p" id="pt">
+                <br><br>
+                <input type='submit'>
+            </form>
+        </fieldset>
+    </center>
+</body>
+</html>
